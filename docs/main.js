@@ -1,4 +1,8 @@
 function successCallback(position) {
+  const lat = position.coords.latitude;
+  const lon = position.coords.longitude;
+  const accuracy = position.coords.accuracy;
+
   document.getElementById('location').innerHTML = 'Supported';
 }
 
