@@ -1,12 +1,12 @@
 function successCallback(position) {
-  const lat = position.coords.latitude;
-  const lon = position.coords.longitude;
-  const accuracy = position.coords.accuracy;
+  const lat = position.coords.latitude;  // 緯度
+  const lon = position.coords.longitude;  // 経度
+  const accuracy = position.coords.accuracy;  // 誤差(m)
 
   document.getElementById('location').innerHTML = `
     <p>Latitude: ${lat}</p>
     <p>Longitude: ${lon}</p>
-    <p>Accuracy: ${accuracy}</p>
+    <p>Accuracy: ${accuracy} m</p>
   `;
 }
 
