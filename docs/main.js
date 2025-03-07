@@ -4,9 +4,9 @@ function successCallback(position) {
   const accuracy = position.coords.accuracy;
 
   document.getElementById('location').innerHTML = `
-    <p>${lat}</p>
-    <p>${lon}</p>
-    <p>${accuracy}</p>
+    <p>Latitude: ${lat}</p>
+    <p>Longitude: ${lon}</p>
+    <p>Accuracy: ${accuracy}</p>
   `;
 }
 
