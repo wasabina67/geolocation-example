@@ -3,7 +3,11 @@ function successCallback(position) {
   const lon = position.coords.longitude;
   const accuracy = position.coords.accuracy;
 
-  document.getElementById('location').innerHTML = 'Supported';
+  document.getElementById('location').innerHTML = `
+    <p>${lat}</p>
+    <p>${lon}</p>
+    <p>${accuracy}</p>
+  `;
 }
 
 function errorCallback(error) {
