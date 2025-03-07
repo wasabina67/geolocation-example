@@ -14,16 +14,16 @@ function errorCallback(error) {
   let msg = '';
   switch (error.code) {
     case error.PERMISSION_DENIED:
-      msg = '';
+      msg = 'Denied';
       break;
     case error.POSITION_UNAVAILABLE:
-      msg = '';
+      msg = 'Unavailable';
       break;
     case error.TIMEOUT:
-      msg = '';
+      msg = 'Timeout';
       break;
     default:
-      msg = '';
+      msg = 'Error';
       break;
   }
 
