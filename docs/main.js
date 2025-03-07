@@ -1,6 +1,6 @@
-function successCallback() {}
+function successCallback(position) {}
 
-function errorCallback() {}
+function errorCallback(error) {}
 
 if ('geolocation' in navigator) {
   navigator.geolocation.getCurrentPosition(successCallback, errorCallback);
