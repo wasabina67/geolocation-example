@@ -11,7 +11,23 @@ function successCallback(position) {
 }
 
 function errorCallback(error) {
-  document.getElementById('location').textContent = 'Error';
+  let msg = '';
+  switch (error.code) {
+    case error.PERMISSION_DENIED:
+      msg = '';
+      break;
+    case error.POSITION_UNAVAILABLE:
+      msg = '';
+      break;
+    case error.TIMEOUT:
+      msg = '';
+      break;
+    default:
+      msg = '';
+      break;
+  }
+
+  document.getElementById('location').textContent = msg;
 }
 
 if ('geolocation' in navigator) {
